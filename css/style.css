@@ -1,0 +1,189 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #04070e;
+}
+:root {
+  --main-color: #cbfe1c;
+}
+
+.main-color {
+  color: #cbfe1c;
+}
+.main-bg-color {
+  background-color: #cbfe1c;
+}
+
+.nav {
+  background-color: #0b0e13;
+}
+
+.container .logo {
+  color: #cbfe1c;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.nav ul .ul-link:hover {
+  color: #cbfe1c important!;
+}
+
+.nav .nav-right {
+  gap: 15px;
+}
+.nav .nav-right .btn {
+  background-color: var(--main-color);
+  font-weight: bold;
+  transition: background 0.5s;
+}
+.nav .nav-right .btn:hover {
+  color: black;
+  background-image: linear-gradient(#0000001a);
+}
+
+/* header styles */
+
+.head {
+  height: 100Vh;
+  background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.877)),
+    url(../assets/images/hero-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.head p {
+  color: rgb(187, 180, 180);
+  font-size: 15px; 
+  font-weight: 300;
+  
+}
+
+.btns .btn2 {
+    color: #cbfe1c;
+  border: #cbfe1c 2px solid;
+  background-color: transparent;
+  transition: all .5s;
+}
+.btns .btn2:hover {
+    color: #000000;
+  background-color: #cbfe1c;
+}
+
+
+.right-head{
+    background-color: white;
+    position: relative;
+    background-image:url(../assets/images/hero-img.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: #cbfe1c solid 3px;
+}
+
+.right-head .part1{
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    background-color: #0B0E13;
+}
+
+
+
+.active-spa{
+  font-size: 12px;
+  color: gray;
+
+}
+
+/*  Our Games styles */
+.our-games{
+ color: #cbfe1c;
+ font-weight: bold;
+ position: relative;
+}
+
+.our-games::after{
+  content: "";
+  width: 60px;
+  height: 4px;
+  position:absolute;
+  top: 50%;
+  right: 35%;
+  background:linear-gradient(to left,transparent,#cbfe1c);
+  transform: translateY(-50%);
+
+
+}
+.our-games::before{
+  content: "";
+  width: 60px;
+  height: 4px;
+  position:absolute;
+  top: 50%;
+  left: 35%;
+  background:linear-gradient(to right,transparent,#cbfe1c);
+  transform: translateY(-50%);
+
+
+}
+
+/* carasoul styles */
+
+.bg-img:hover{
+  border: 3px solid #cbfe1c;  
+  transition: all 1s;
+  background-image: linear-gradient(to top,#cbfe1c,transparent);
+}
+/* .slider{
+  position: relative;
+} */
+
+/* section .container .btn-pre{
+  top: 98%;
+  border-radius: 20px ;
+  left: 40%;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+} */
+
+
+.item{
+  height: 40vh;
+}
+.inner{
+  background-color: #1A1A1A;
+  border: rgba(64, 224, 208, 0.185) 1px solid;
+  transition: all .4s;
+}
+.inner:hover{
+  background:linear-gradient( #c9fe1c10);
+  border: #cbfe1c 1px solid;
+}
+
+.inner .icon{
+  width: 30%;
+  height: 30%;
+  background-color: rgba(111, 111, 219, 0.205);
+}
+
+.item3 .inner3,.inner6{
+  background-image: url(../assets/images/what-we-do-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.item6 .inner6{
+  background-image: url(../assets/images/what-we-do-2.png);
+ 
+}
+
+.container .line{
+  width: 50%;
+  height: 2px;
+  margin: 30px auto;
+  box-shadow: 2px 0px 10px 01px #c9fe1c75;
+  background:linear-gradient(to right ,black,#cbfe1c,#000000a9);
+}
